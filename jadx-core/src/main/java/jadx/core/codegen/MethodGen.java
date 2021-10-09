@@ -318,7 +318,7 @@ public class MethodGen {
 					.filter(Objects::nonNull)
 					.filter(insn -> insn.getType() != InsnType.NOP)
 					.count();
-			if (insnCountEstimate > 100) {
+			if (insnCountEstimate > 500) {
 				code.startLine("// Method dump skipped, instructions count: " + insnArr.length);
 				return;
 			}
